@@ -1,0 +1,73 @@
+#form {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "fn ln ."
+        "ad ad ad"
+        "ct st zc"
+        "cn cn ."
+        "cc cc ."
+        "cv ex pc";
+}
+
+.form-entry {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.form-entry p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    margin: 0px;
+    font-style: normal;
+}
+
+.form-entry input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#form > first-name {
+    grid-area: fn;
+}
+
+#form > last-name {
+    grid-area: ln;
+}
+
+#form > address {
+    grid-area: ad;
+}
+
+#form > city {
+    grid-area: ct;
+}
+
+#form > state {
+    grid-area: st;
+}
+
+#form > zip-code {
+    grid-area: zc;
+}
+
+#form > card-name {
+    grid-area: cn;
+}
+
+#form > credit-card {
+    grid-area: cc;
+}
+
+#form > cvv {
+    grid-area: cv;
+}
+
+#form > expiration-date {
+    grid-area: ex;
+}
+
+#form > postal-code {
+    grid-area: pc;
+}

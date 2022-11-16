@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/purchase_page.css">
+    <title>Quick and Cheap USBs - Purchase Information</title>
+    <script src="node_modules/@emailjs/browser/"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("k0eciOJbvij5YktM4");
+    })();
+    </script>
+</head>
+<body>
+    <form id="user-information">
+        <div class="form-entry" id="form">
+            <first-name>
+                <p>First Name</p><br>
+                <input type="text" name="first-name" required>
+            </first-name>
+            <last-name>
+                <p>Last Name</p><br>
+                <input type="text" name="last-name" required>
+            </last-name>
+            <address>
+                <p>Address Line 1</p><br>
+                <input type="text" name="address-line-1" required>
+                <br>
+                <br>
+                <p>Address Line 2</p><br>
+                <input type="text" name="address-line-2">
+            </address>
+            <city>
+                <p>City</p><br>
+                <input type="text" name="address-city" required>
+            </city>
+            <state>
+                <p>State</p><br>
+                <input type="text" name="address-state" required>
+            </state>
+            <zip-code>
+                <p>Postal Code</p><br>
+                <input type="text" name="address-zip-code" required pattern="\d{5}">
+            </zip-code>
+            <card-name>
+                <p>Name on Card</p><br>
+                <input type="text" name="card-name" required>
+            </card-name>
+            <credit-card>
+                <p>Card Number</p><br>
+                <input type="text" name="card-number" required pattern="\d{4}[-]?\d{4}[-]?\d{4}[-]?\d{4}">
+            </credit-card>
+            <cvv>
+                <p>CVV</p><br>
+                <input type="text" name="cvv" required pattern="\d{3}">
+            </cvv>
+            <expiration-date>
+                <p>Expiration</p><br>
+                <input type="month" name="month" required>
+            </expiration-date>
+            <postal-code>
+                <p>Postal Code</p><br>
+                <input type="text" name="card-zip-code" required pattern="\d{5}">
+            </postal-code>
+        </div>
+        <br>
+        <button type="submit">Place Order</button>
+    </form>
+    <br>
+    <div id="something">
+        asdf
+    </div>
+    <script src="scripts/submit_form.js"></script>
+</body>
+</html>
