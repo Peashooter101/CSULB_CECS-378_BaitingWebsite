@@ -8,6 +8,10 @@
         "cn cn ."
         "cc cc ."
         "cv ex pc";
+    border-radius: 25px;
+    background: rgba(0,0,0,0.25);
+    padding: 20px;
+    width: 60vw;
 }
 
 .form-entry {
@@ -26,6 +30,18 @@
 .form-entry input {
     width: 100%;
     box-sizing: border-box;
+}
+
+.form-entry input:invalid {
+    animation: shake 0.2s ease-in-out 0s 2;
+    box-shadow: 0 0 0.6rem #ff0000;
+}
+
+@keyframes shake {
+    0%      { margin-left: 0rem; }
+    25%     { margin-left: 0.5rem; }
+    75%     { margin-left: -0.5rem; }
+    100%    { margin-left: 0rem; }
 }
 
 #form > first-name {
@@ -70,4 +86,21 @@
 
 #form > postal-code {
     grid-area: pc;
+}
+
+button {
+    background-color: royalblue;
+    border-color: royalblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    width: 100%;
+    border-radius: 25px;
+    margin: 0;
+    margin-top: 10px;
+    transition: 0.3s cubic-bezier(.51,.01,.43,.99);
+}
+
+button:hover {
+    background-color: deepskyblue;
+    border-color: deepskyblue;
 }

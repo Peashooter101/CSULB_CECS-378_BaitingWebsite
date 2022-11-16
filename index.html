@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/purchase_page.css">
+    <link rel="stylesheet" href="styles/webpage.css">
+    <link rel="stylesheet" href="styles/input_form.css">
     <title>Quick and Cheap USBs - Purchase Information</title>
     <script src="node_modules/@emailjs/browser/"></script>
     <script type="text/javascript"
@@ -17,64 +18,79 @@
     </script>
 </head>
 <body>
-    <form id="user-information">
-        <div class="form-entry" id="form">
-            <first-name>
-                <p>First Name</p><br>
-                <input type="text" name="first-name" required>
-            </first-name>
-            <last-name>
-                <p>Last Name</p><br>
-                <input type="text" name="last-name" required>
-            </last-name>
-            <address>
-                <p>Address Line 1</p><br>
-                <input type="text" name="address-line-1" required>
-                <br>
-                <br>
-                <p>Address Line 2</p><br>
-                <input type="text" name="address-line-2">
-            </address>
-            <city>
-                <p>City</p><br>
-                <input type="text" name="address-city" required>
-            </city>
-            <state>
-                <p>State</p><br>
-                <input type="text" name="address-state" required>
-            </state>
-            <zip-code>
-                <p>Postal Code</p><br>
-                <input type="text" name="address-zip-code" required pattern="\d{5}">
-            </zip-code>
-            <card-name>
-                <p>Name on Card</p><br>
-                <input type="text" name="card-name" required>
-            </card-name>
-            <credit-card>
-                <p>Card Number</p><br>
-                <input type="text" name="card-number" required pattern="\d{4}[-]?\d{4}[-]?\d{4}[-]?\d{4}">
-            </credit-card>
-            <cvv>
-                <p>CVV</p><br>
-                <input type="text" name="cvv" required pattern="\d{3}">
-            </cvv>
-            <expiration-date>
-                <p>Expiration</p><br>
-                <input type="month" name="month" required>
-            </expiration-date>
-            <postal-code>
-                <p>Postal Code</p><br>
-                <input type="text" name="card-zip-code" required pattern="\d{5}">
-            </postal-code>
+    <div id="top">
+        <p>Quick and Cheap USBs</p>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Home</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Deals</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Support</a>
+    </div>
+    <div id="purchase-info">
+        <!-- Left Side -->
+        <form id="user-information">
+            <div class="form-entry" id="form">
+                <first-name>
+                    <p>First Name</p><br>
+                    <input type="text" name="first-name">
+                </first-name>
+                <last-name>
+                    <p>Last Name</p><br>
+                    <input type="text" name="last-name">
+                </last-name>
+                <address>
+                    <p>Address Line 1</p><br>
+                    <input type="text" name="address-line-1">
+                    <br>
+                    <br>
+                    <p>Address Line 2</p><br>
+                    <input type="text" name="address-line-2">
+                </address>
+                <city>
+                    <p>City</p><br>
+                    <input type="text" name="address-city">
+                </city>
+                <state>
+                    <p>State</p><br>
+                    <input type="text" name="address-state">
+                </state>
+                <zip-code>
+                    <p>Postal Code</p><br>
+                    <input type="text" name="address-zip-code">
+                </zip-code>
+                <card-name>
+                    <p>Name on Card</p><br>
+                    <input type="text" name="card-name">
+                </card-name>
+                <credit-card>
+                    <p>Card Number</p><br>
+                    <input type="text" name="card-number">
+                </credit-card>
+                <cvv>
+                    <p>CVV</p><br>
+                    <input type="text" name="cvv">
+                </cvv>
+                <expiration-date>
+                    <p>Expiration</p><br>
+                    <input type="month" name="month">
+                </expiration-date>
+                <postal-code>
+                    <p>Postal Code</p><br>
+                    <input type="text" name="card-zip-code">
+                </postal-code>
+            </div>
+        </form>
+        <!-- Right Side -->
+        <div>
+            <div id="preview">
+                <span class="text-head">SanDisk Extreme PRO</span><br>
+                <span class="text">128 GB</span><br>
+                <img src="https://i0.wp.com/www.thessdreview.com/wp-content/uploads/2014/05/SanDisk-Extreme-PRO-USB-3.0-128GB-Flash-Drive-Package.png?ssl=1" width="100%">
+            </div>
+            <button form="user-information" type="submit">Place Order</button>
         </div>
         <br>
-        <button type="submit">Place Order</button>
-    </form>
-    <br>
-    <div id="something">
-        asdf
     </div>
+    <!-- CSS: input_form.css -->
     <script src="scripts/submit_form.js"></script>
 </body>
 </html>
