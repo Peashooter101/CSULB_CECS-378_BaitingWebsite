@@ -24,7 +24,6 @@ function validateCard(cardnumber) {
         }
         sum += num;
     }
-    alert(sum);
     return sum % 10 == 0;
 }
 
