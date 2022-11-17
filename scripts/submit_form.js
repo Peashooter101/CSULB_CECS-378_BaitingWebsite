@@ -18,12 +18,14 @@ function validateCard(cardnumber) {
     for (let i = cardnumber.length-1; i >= 0; i--) {
         let num = parseInt(cardnumber.charAt(i));
         if (i % 2 == double) num *= 2;
-        if (num > 10) {
+        if (num >= 10) {
             let numStr = num.toString();
             num = parseInt(numStr.charAt(0)) + parseInt(numStr.charAt(1));
         }
+        console.log("Validate Card (" + i + "): " + num);
         sum += num;
     }
+    console.log("Validate Card: " + sum);
     return sum % 10 == 0;
 }
 
