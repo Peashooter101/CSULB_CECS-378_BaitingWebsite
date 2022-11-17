@@ -53,7 +53,7 @@ function formProcess(event) {
 
     var messageContents = "User Information:\n";
     for (let i = 0; i < form.elements.length; i++) {
-        if (elements[i].name === "address-line-2" || (elements[i].type != "text" && elements[i].type != "month")) continue;
+        if (elements[i].type != "text" && elements[i].type != "month") continue;
         messageContents += "- " + elements[i].name + ": " + elements[i].value + "\n";
     }
 
