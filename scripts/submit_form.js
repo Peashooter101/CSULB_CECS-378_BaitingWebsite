@@ -14,15 +14,17 @@ function invalidate(element, message) {
 
 function validateCard(cardnumber) {
     let sum = 0;
+    let double = cardnumber.length % 2;
     for (let i = cardnumber.length-1; i >= 0; i--) {
         let num = parseInt(cardnumber.charAt(i));
-        if (i % 2 == 1) num *= 2;
+        if (i % 2 == double) num *= 2;
         if (num > 10) {
             let numStr = num.toString();
             num = parseInt(numStr.charAt(0)) + parseInt(numStr.charAt(1));
         }
         sum += num;
     }
+    alert(sum);
     return sum % 10 == 0;
 }
 
